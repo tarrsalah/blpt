@@ -1,0 +1,25 @@
+.mb {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+@font-face {
+  font-family: 'Inconsolata Regular';
+  src: url("../dist/fonts/Inconsolata-Regular.ttf");
+}
+h1 {
+  font-family: 'Inconsolata Regular';
+  font-size: 10em;
+  font-weight: 100;
+  text-transform: capitalize;
+  border: 1px solid #6A1B9A;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: calc(50vh - 1.3em );
+  left: calc(50% - 2em);
+  width: 4em;
+  height: 1.5em;
+  line-height: 1.5em;
+  text-align: center;
+  color: #6A1B9A;
+  background-color: #F3E5F5;
+}
