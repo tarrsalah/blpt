@@ -1,0 +1,30 @@
+{
+    "name": "fatigue",
+    "version": "1.0.0",
+    "description": "fatigue boilerplate.",
+    "main": "src/scripts/index.sj",
+    "scripts": {
+        "clean": "rm -rf ./dist/*.js ./dist/*.css",
+        "build:scripts": "browserify -e ./src/scripts/index.js | uglifyjs -o ./dist/scripts.js",
+        "build:styles": "lessc --clean-css ./src/styles/style.less ./dist/styles.css && postcss --use autoprefixer ./dist/*.css -d ./dist",
+        "build": "npm-run-all build:scripts build:styles",
+        "dev:scripts": "browserify -e ./src/scripts/index.js -o ./dist/scripts.js -d",
+        "dev:styles": "lessc ./src/styles/style.less ./dist/styles.css",
+        "watch:scripts": "onchange './src/scripts/*.js' './src/scripts/**/*.js' -- npm run dev:scripts",
+        "watch:styles": "onchange './src/styles/*.less' './src/styles/**/*.less' -- npm run dev:styles",
+        "watch:dist": "browser-sync start --server --files ./dist/*.js ./dist/*.css",
+        "watch": "npm-run-all -p watch:scripts watch:styles watch:dist"
+    },
+    "author": "tarrsalah@gmail.com",
+    "license": "MIT",
+    "devDependencies": {
+        "autoprefixer": "^6.3.6",
+        "browser-sync": "^2.12.8",
+        "browserify": "^13.0.1",
+        "less": "^2.7.1",
+        "npm-run-all": "^2.1.1",
+        "onchange": "^2.4.0",
+        "postcss-cli": "^2.5.2",
+        "uglify-js": "^2.6.2"
+    }
+}

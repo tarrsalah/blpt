@@ -1,0 +1,5 @@
+./dist/*.css
+./dist/*.js
+/node_modules/
+/dist/*.js
+/dist/*.css
