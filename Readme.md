@@ -1,9 +1,3 @@
-<h1 align="center">
-	<br>
-	<img width="600"  src="https://github.com/tarrsalah/fatigue/blob/master/icon.png" alt="fatigue">
-	<br>
-	<br>
-	<br>
-</h1>
+# fatigue
 
-My personal frontend boilerplate.
+My personal frontend boilerplate for small prototypes..

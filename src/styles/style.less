@@ -1,34 +1,18 @@
-//------------------------------
-// mixins
-//------------------------------
-
-.mb {
-    border: 1px solid rgba(0, 0, 0, 0.2);
+html {
+    box-sizing: border-box;
 }
 
-@font-face {
-    font-family: 'Inconsolata Regular';
-    src: url("../dist/fonts/Inconsolata-Regular.ttf");
+*, *:before, *:after {
+                 box-sizing: inherit;
 }
 
-@color: #6A1B9A;
-@background: #F3E5F5;
-
-h1 {
-    font-family: 'Inconsolata Regular';
-    font-size: 10em;
+body {
+    height: 100%;
+    background-color: #eee;
+}
+.fatigue {
+    margin: 2vw;
+    font-family: "Helvetica", "Arial", "sans-serif";
     font-weight: 100;
-    text-transform: capitalize;
-    border: 1px solid @color;
-    padding: 0;
-    margin: 0;
-    position: absolute;
-    top: ~"calc(50vh - 1.3em )";
-    left: ~"calc(50% - 2em)";
-    width: 4em;
-    height: 1.5em;
-    line-height: 1.5em;
-    text-align: center;
-    color: @color;
-    background-color: @background;
+    font-size: 15vw;
 }

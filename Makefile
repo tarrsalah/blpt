@@ -1,7 +1,10 @@
 all : watch
 
+install:
+	npm --no-colors install
+
 watch:
-	npm run watch
+	npm --no-colors run watch
 
 build:
-	npm run build
+	npm --no-colors run build
