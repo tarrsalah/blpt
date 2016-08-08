@@ -10,8 +10,8 @@
     "build": "npm-run-all build:scripts build:styles",
     "dev:scripts": "browserify -e ./src/scripts/index.js -o ./dist/scripts.js -d",
     "dev:styles": "lessc ./src/styles/style.less ./dist/styles.css",
-    "watch:scripts": "onchange './src/scripts/*.js' './src/scripts/**/*.js' -- npm run dev:scripts",
-    "watch:styles": "onchange './src/styles/*.less' './src/styles/**/*.less' -- npm run dev:styles",
+    "watch:scripts": "onchange -i './src/scripts/*.js' './src/scripts/**/*.js' -- npm run dev:scripts",
+    "watch:styles": "onchange -i './src/styles/*.less' './src/styles/**/*.less' -- npm run dev:styles",
     "watch:dist": "browser-sync start --server --files ./dist/*.js ./dist/*.css",
     "watch": "npm-run-all -p watch:scripts watch:styles watch:dist"
   },
