@@ -1,31 +1,33 @@
 {
-  "name": "fatigue",
-  "version": "1.0.0",
+  "name": "blpt",
+  "version": "0.1.0",
   "description": "",
-  "main": "index.js",
+  "main": "./src/scripts/index.js",
   "scripts": {
     "start": "webpack --watch",
+    "serve": "http-server -c-1",
+    "build": "webpack -p",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tarrsalah/fatigue.git"
+    "url": "git+https://github.com/tarrsalah/blpt.git"
   },
   "keywords": [],
   "author": "Taouririt Salah Eddine <tarrsalah@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/tarrsalah/fatigue/issues"
+    "url": "https://github.com/tarrsalah/blpt/issues"
   },
-  "homepage": "https://github.com/tarrsalah/fatigue#readme",
+  "homepage": "https://github.com/tarrsalah/blpt#Readme.md",
   "devDependencies": {
     "browserslist": "^1.6.0",
     "css-loader": "^0.26.1",
     "extract-text-webpack-plugin": "^2.0.0-beta.5",
+    "http-server": "^0.9.0",
     "postcss-cssnext": "^2.9.0",
     "postcss-loader": "^1.2.2",
     "style-loader": "^0.13.1",
-    "webpack": "^2.2.0",
-    "webpack-dev-server": "^2.2.0"
+    "webpack": "^2.2.0"
   }
 }

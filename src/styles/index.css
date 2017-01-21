@@ -1,32 +1,36 @@
 :root {
-    --heading-color: #333;
-    --heading-bg: #ff6;
-    --text-color: #444;
+    --heading-color: #000;
+    --heading-bg: #cff;
+}
+
+
+html {
+    box-sizing: border-box;
+
+    *, *:before, *:after {
+        box-sizing: inherit;
+    }
 }
 
 body {
     margin: 0;
+    height: 100%;
     line-height: 1.5;
 }
 
 .container {
-    padding: 1em;
-    min-height: 40em;
-    background-color: #f0f0f0;
-    max-width: 30em;
+    height: 100vh;
+    text-align: center;
 
     & h1 {
         display: inline-block;
-        font-family: Helvetica;
-        font-size: 2em;
+        margin: 1em;
+        padding: 0 1em;
+        font-size: 10vw;
+        font-family: monospace;
+        font-weight: 100;
+        letter-spacing: 0.5em;
         color: var(--heading-color);
         background-color: var(--heading-bg);
-        padding: 0.3em;        
     }
-}
-
-p {
-    color: var(--text-color);
-    font-family: monospace;
-    font-size: 1.4em;
 }
